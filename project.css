@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+/* font-family: 'Epilogue', sans-serif; */
+
+
+
+*{
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: lighter;
+
+}
+
+/* HEADER START */
+header{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+
+}
+
+/* menu Start */
+header .menu{
+
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 25px;
+}
+
+header >.menu > h1{
+    font-weight: 700 bolder;
+    margin-right: 45px;
+}
+
+
+header > .menu > .dropdow{
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+    transition: 600ms;
+
+}
+header > .menu > .dropdow > p:hover,header > .menu > p:hover{
+cursor: pointer;    
+
+}
+
+header > .menu > .dropdow > p > .icon-arrow-up{
+    display: none;
+    transition: 600ms;
+
+}
+
+header > .menu > .dropdow:hover > p > .icon-arrow-up{
+    display: initial;
+    transition: 600ms;
+
+}
+
+header > .menu > .dropdow:hover > p > .icon-arrow-down{
+    display: none;
+    transition: 600ms;
+}
+
+header > .menu > .dropdow > .dropdow-content{
+    display: none;
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: 600ms;
+    width: 116px;
+}
+
+header > .menu > .dropdow:hover > .dropdow-content{
+    width: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: 600ms;
+}
+
+header > .menu > .dropdow > .dropdow-content >span{
+    margin: 0 5px;
+    width: 7em;
+    gap: 15px;
+    /* border: solid 1px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+header > .menu > .dropdow > .dropdow-content >span > a{
+ text-decoration: none;   
+}
+
+/* menu End */
+
+/* header login START */
+header > .login{
+    display: flex;
+    width: 14%;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 0 22px;
+    margin-right: 45px;
+    align-items: center;
+}
+
+header > .login > p{
+    cursor: pointer;
+    transition: 600ms;
+}
+
+header > .login > p:hover{
+    cursor: pointer;
+    font-weight: bold;
+    transition: 600ms;
+}
+
+header > .login > p:nth-child(2){
+    border: solid 1px;
+    padding: 10px 20px;
+    border-radius: 10px;  
+}
+
+header > .icon-bar{
+    display: none;
+}
+/* header login END */
+
+/* HEADER END */
+
+
+/* MAIN START */
+main {
+    margin-top: 7.3em;
+    width: 100%;
+}
+
+/* INFO-MAIN START */
+main .info-main{
+    margin: auto;
+    width: 80%;
+    height: 45em;
+    /* border: solid 1px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > .info-main > .main-container{
+width: 100%;
+height: 100%;
+
+}
+
+
+main > .info-main >.left > .subContainer1{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: baseline;
+    text-align: inherit;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+main > .info-main >.left > .subContainer1 > .title{
+    font-size: 81px;
+    width: 100%;
+    font-weight: bold;
+}
+
+main > .info-main >.left > .subContainer1 > .details{
+    font-size: 22px;
+    width: 100%;
+    font-weight: lighter ;
+}
+
+main > .info-main >.left > .subContainer1 > button{
+    padding: 16px 40px;
+    border: solid 1px hsl(0, 0%, 8%);
+    border-radius: 13px;
+    font-weight: bold;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+    font-size: 17px;
+    transition: 600ms;
+
+}
+main > .info-main >.left > .subContainer1 > button:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+    transition: 600ms;
+}
+
+main > .info-main >.left > .subContainer2{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+
+main > .info-main >.right >.responsive-img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+/* INFO-MAIN END */
+
+.Container-Menu-Mobile{
+    display: none;
+}
+/* MAIN END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) and (min-width:375px) {
+    /* Header START */
+    header {
+        width: 100%;
+        padding: 0 15px;
+    }
+    /* header Menu Start*/
+        header > .menu > p {
+            display: none;
+        }
+
+        header > .menu > .dropdow{
+            display: none;
+        }
+
+    /* header Menu End*/
+
+    /* header login Start*/
+    header > .login {
+        display: none;
+    }
+    /* header login END*/
+
+    /* header icon-bar Start */
+    header > .icon-bar{
+        display: initial;
+    }
+    /* header icon-bar End */
+    /* Header END */
+
+    /* MAIN START */
+
+main{
+    width: 100%;
+}
+
+/* INFO-MAIN START */
+main .info-main {
+    margin: auto;
+    width: 100%;
+    height: 59em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main > .info-main > .main-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+
+main > .info-main >.left > .subContainer1 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+main > .info-main >.left > .subContainer1 > .title {
+    font-size: 40px;
+    width: 100%;
+    font-weight: bold;
+}
+
+main > .info-main >.left > .subContainer1 > .details {
+    font-size: 18px;
+    width: 100%;
+    font-weight: lighter;
+}
+
+main > .info-main >.left > .subContainer1 > .title {
+    font-size: 40px;
+    width: 100%;
+    font-weight: bold;
+}
+
+main > .info-main >.left > .subContainer1 > .details {
+    font-size: 18px;
+    width: 100%;
+    font-weight: lighter;
+}
+
+main > .info-main >.left > .subContainer1 > button {
+    padding: 16px 40px;
+    border: solid 1px hsl(0, 0%, 8%);
+    border-radius: 13px;
+    font-weight: bold;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+    font-size: 17px;
+    transition: 600ms;
+}
+
+main > .info-main >.left > .subContainer2 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* INFO-MAIN END */
+/* MAIN END */
+
+/* CONATINER-MENU-MOBILE START*/
+
+.appearsMenu{
+    position: fixed;
+    left: 8em;
+}
+.Container-Menu-Mobile{
+    position: fixed;
+    top: 0em;
+    left: 38em;
+    background-color: hsl(0, 0%, 98%);
+    width: 17em;
+    height: 50em;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Container-Menu-Mobile > .btn-close{
+    margin: 1em 0em 1em 13.4em;
+}
+
+.Container-Menu-Mobile > .menu-options{
+    width: 100%;
+    height: 16em;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+    margin: 10px 0;
+    padding: 15px;
+
+}
+.Container-Menu-Mobile > .menu-options > p, .Container-Menu-Mobile > .menu-options > .dropdown-mobile{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.Container-Menu-Mobile > .menu-options > .dropdown-mobile{
+    width: 100%;
+    height: 2em;
+    position: relative;
+    /* border: solid 1px; */
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color:  hsl(0, 0%, 98%);
+}
+.Container-Menu-Mobile > .menu-options > .dropdown-mobile > .arrow-icon{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0.6em;
+}
+.Container-Menu-Mobile > .menu-options > .dropdown-mobile > .up,.Container-Menu-Mobile > .menu-options > .dropdown-mobile:hover > .down{
+    display: none;
+}
+.Container-Menu-Mobile > .menu-options > .dropdown-mobile:hover > .up{
+    display: initial;
+}
+
+
+
+.Container-Menu-Mobile > .menu-options > .dropdown-mobile > .dropdown-submenu{
+    position: absolute;
+    width: 100%;
+    height: 5em;
+    top: 2em;
+    right: 0em;
+    display: none;
+    height: 15em;
+    z-index: 1;
+}
+
+.Container-Menu-Mobile > .menu-options > .dropdown-mobile:hover > .dropdown-submenu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 15em;
+    margin-bottom: 15px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+
+.Container-Menu-Mobile > .menu-options > .dropdown-mobile > .dropdown-submenu > .submenu-options{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+
+
+}
+
+.Container-Menu-Mobile > .menu-options > .dropdown-mobile > .dropdown-submenu > .submenu-options > .icon{
+    display: block;
+    position: relative;
+    width: 20%;
+    height: 50%;
+    margin: 5px 0;
+}
+
+
+.Container-Menu-Mobile > .menu-options > .dropdown-mobile > .dropdown-submenu > .submenu-options > a{
+    text-decoration: none;
+    color: hsl(0, 0%, 8%);
+}
+
+
+
+/* SOCAIAL START */
+
+
+.Container-Menu-Mobile > .social{
+    width: 100%;
+    height: 5em;
+    /* border: solid 1px; */
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.Container-Menu-Mobile > .social > p{
+    font-size: 20px;
+    color: hsl(0, 0%, 8%);
+}
+
+.Container-Menu-Mobile > .social > p:nth-child(2){
+    border: solid 1px;
+    border-radius: 16px;
+    padding: 11px;
+    width: 65%;
+    align-self: center;
+}
+/* SOCAIAL END */
+/* CONATINER-MENU-MOBILE END*/
+    
+}
